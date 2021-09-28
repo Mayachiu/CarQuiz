@@ -120,6 +120,10 @@
                                 <rect key="frame" x="66" y="179" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ehA-C8-nBq">
+                                <rect key="frame" x="67" y="61" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qy3-po-0pg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -128,6 +132,7 @@
                         <outlet property="answerButton1" destination="qbc-p9-vg6" id="f4f-Sl-Jym"/>
                         <outlet property="answerButton2" destination="EYx-ge-fVq" id="beP-Qf-oas"/>
                         <outlet property="judgeImageView" destination="ugC-bu-s0B" id="0Ao-Bh-jcr"/>
+                        <outlet property="quizImageView" destination="ehA-C8-nBq" id="OT5-mK-bbN"/>
                         <outlet property="quizNumberLabel" destination="z1U-lR-K7x" id="0af-eV-oFO"/>
                         <outlet property="quizTextView" destination="5ei-WD-PJB" id="grV-I7-IZN"/>
                         <segue destination="mn4-xa-oak" kind="presentation" identifier="toScoreVC" id="Qx6-pK-U7H"/>

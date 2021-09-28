@@ -13,6 +13,8 @@
 		1A1603542701E5EB00C9F81E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1603522701E5EB00C9F81E /* Main.storyboard */; };
 		1A1603562701E5EC00C9F81E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1603552701E5EC00C9F81E /* Assets.xcassets */; };
 		1A1603592701E5EC00C9F81E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1603572701E5EC00C9F81E /* LaunchScreen.storyboard */; };
+		1A4A45A22702D30B00155D5E /* q1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4A45A02702D30B00155D5E /* q1.png */; };
+		1A4A45A32702D30B00155D5E /* q2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4A45A12702D30B00155D5E /* q2.png */; };
 		1AF059D2270232210071F830 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF059D1270232210071F830 /* QuizViewController.swift */; };
 		1AF059D42702337B0071F830 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF059D32702337B0071F830 /* ScoreViewController.swift */; };
 		1AF059D627028B0C0071F830 /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1AF059D527028B0C0071F830 /* quiz.csv */; };
@@ -31,6 +33,8 @@
 		1A1603552701E5EC00C9F81E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A1603582701E5EC00C9F81E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A16035A2701E5EC00C9F81E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A4A45A02702D30B00155D5E /* q1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = q1.png; sourceTree = "<group>"; };
+		1A4A45A12702D30B00155D5E /* q2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = q2.png; sourceTree = "<group>"; };
 		1AF059D1270232210071F830 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		1AF059D32702337B0071F830 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		1AF059D527028B0C0071F830 /* quiz.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 			children = (
 				1AF059D82702952E0071F830 /* correct.png */,
 				1AF059D92702952E0071F830 /* incorrect.png */,
+				1A4A45A02702D30B00155D5E /* q1.png */,
+				1A4A45A12702D30B00155D5E /* q2.png */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -156,9 +162,11 @@
 				1AF059DF2702C20F0071F830 /* quiz2.csv in Resources */,
 				1AF059DA2702952E0071F830 /* correct.png in Resources */,
 				1AF059DB2702952E0071F830 /* incorrect.png in Resources */,
+				1A4A45A22702D30B00155D5E /* q1.png in Resources */,
 				1A1603592701E5EC00C9F81E /* LaunchScreen.storyboard in Resources */,
 				1A1603562701E5EC00C9F81E /* Assets.xcassets in Resources */,
 				1A1603542701E5EB00C9F81E /* Main.storyboard in Resources */,
+				1A4A45A32702D30B00155D5E /* q2.png in Resources */,
 				1AF059D627028B0C0071F830 /* quiz.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

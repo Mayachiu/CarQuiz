@@ -13,6 +13,10 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var answerButton1: UIButton!
     @IBOutlet weak var answerButton2: UIButton!
     @IBOutlet weak var judgeImageView: UIImageView!
+    @IBOutlet weak var quizImageView: UIImageView!
+    
+    let quizImageArray = [#imageLiteral(resourceName: "q1.png"), #imageLiteral(resourceName: "q2.png")]
+    
     
     var csvArray: [String] = []
     var quizArray: [String] = []
@@ -24,6 +28,7 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
 
         print("選択したのはレベル\(selectLebel)")
+        quizImageView.image = quizImageArray[0]
         
         csvArray = loadCSV(fileName: "quiz")
         print(csvArray)
@@ -81,6 +86,7 @@ class QuizViewController: UIViewController {
         quizCount += 1
         if quizCount < csvArray.count {
         quizArray = csvArray[quizCount].components(separatedBy: ",")
+            quizImageView.image = quizImageArray[quizCount]
         quizNumberLabel.text = "第\(quizCount + 1)問"
         quizTextView.text = quizArray[0]
         answerButton1.setTitle(quizArray[2], for: .normal)
