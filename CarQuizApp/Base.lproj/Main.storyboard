@@ -171,6 +171,14 @@
                                     <action selector="toTopButtonAction:" destination="mn4-xa-oak" eventType="touchUpInside" id="8IR-IB-PuP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhs-Hv-a7T">
+                                <rect key="frame" x="133" y="422" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="問題選択に戻る"/>
+                                <connections>
+                                    <action selector="toSelectButtonAction:" destination="mn4-xa-oak" eventType="touchUpInside" id="lTg-6J-CKS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xPD-l5-sJD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

@@ -23,6 +23,10 @@ class ScoreViewController: UIViewController {
         self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true)
     }
     
+    @IBAction func toSelectButtonAction(_ sender: Any) {
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true)
+        
+    }
     /*
     // MARK: - Navigation
 
