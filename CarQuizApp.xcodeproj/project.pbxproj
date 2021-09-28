@@ -19,6 +19,7 @@
 		1AF059DA2702952E0071F830 /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AF059D82702952E0071F830 /* correct.png */; };
 		1AF059DB2702952E0071F830 /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AF059D92702952E0071F830 /* incorrect.png */; };
 		1AF059DD270297D80071F830 /* SelectLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF059DC270297D80071F830 /* SelectLevelViewController.swift */; };
+		1AF059DF2702C20F0071F830 /* quiz2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1AF059DE2702C20F0071F830 /* quiz2.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		1AF059D82702952E0071F830 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
 		1AF059D92702952E0071F830 /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
 		1AF059DC270297D80071F830 /* SelectLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelViewController.swift; sourceTree = "<group>"; };
+		1AF059DE2702C20F0071F830 /* quiz2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz2.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				1AF059D527028B0C0071F830 /* quiz.csv */,
 				1AF059D32702337B0071F830 /* ScoreViewController.swift */,
 				1AF059D1270232210071F830 /* QuizViewController.swift */,
+				1AF059DE2702C20F0071F830 /* quiz2.csv */,
 				1A1603552701E5EC00C9F81E /* Assets.xcassets */,
 				1A1603572701E5EC00C9F81E /* LaunchScreen.storyboard */,
 				1A16035A2701E5EC00C9F81E /* Info.plist */,
@@ -150,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AF059DF2702C20F0071F830 /* quiz2.csv in Resources */,
 				1AF059DA2702952E0071F830 /* correct.png in Resources */,
 				1AF059DB2702952E0071F830 /* incorrect.png in Resources */,
 				1A1603592701E5EC00C9F81E /* LaunchScreen.storyboard in Resources */,
