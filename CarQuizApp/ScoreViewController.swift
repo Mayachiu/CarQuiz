@@ -7,16 +7,29 @@
 
 import UIKit
 
-class ScoreViewController: UIViewController {
+class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     var correct = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
 
         scoreLabel.text = "\(correct)問正解！"
         // Do any additional setup after loading the view.
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MainTableViewCell
+            return cell
     }
     
     @IBAction func toTopButtonAction(_ sender: Any) {
