@@ -64,6 +64,30 @@
                                     <action selector="levelButtonActionWithSender:" destination="bRP-11-SlB" eventType="touchUpInside" id="le1-lg-trg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcm-qt-3Dd">
+                                <rect key="frame" x="174" y="429" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="レベル3"/>
+                                <connections>
+                                    <action selector="levelButtonActionWithSender:" destination="bRP-11-SlB" eventType="touchUpInside" id="XqG-4W-Clk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHd-Bp-gtD">
+                                <rect key="frame" x="172" y="513" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="レベル4"/>
+                                <connections>
+                                    <action selector="levelButtonActionWithSender:" destination="bRP-11-SlB" eventType="touchUpInside" id="ZSY-zm-VSB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJP-7u-o3y">
+                                <rect key="frame" x="172" y="584" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="レベル5"/>
+                                <connections>
+                                    <action selector="levelButtonActionWithSender:" destination="bRP-11-SlB" eventType="touchUpInside" id="yQE-4K-llN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CL6-cB-NKa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
