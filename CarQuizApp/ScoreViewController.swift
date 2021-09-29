@@ -20,6 +20,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.register(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
 
         scoreLabel.text = "\(correct)問正解！"
+        
         // Do any additional setup after loading the view.
     }
     
@@ -29,7 +30,11 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MainTableViewCell
-            return cell
+        
+        cell.scoreQuizNumerLabel.text = "aaa"
+        cell.scoreAnswerLabel.text = "正解は○です"
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
