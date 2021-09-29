@@ -8,8 +8,11 @@
 import UIKit
 
 class MainTableViewCell: UITableViewCell {
-    @IBOutlet weak var img: UIImageView!
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var scoreQuizImageView: UIImageView!
+    @IBOutlet weak var scoreQuizNumerLabel: UILabel!
+    @IBOutlet weak var scoreQuizTextView: UITextView!
+    @IBOutlet weak var scoreAnswerLabel: UILabel!
+    @IBOutlet weak var explanation: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

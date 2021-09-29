@@ -32,6 +32,10 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
             return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 150
+    }
+    
     @IBAction func toTopButtonAction(_ sender: Any) {
         self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true)
     }
