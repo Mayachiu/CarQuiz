@@ -30,7 +30,7 @@ class QuizViewController: UIViewController {
         print("選択したのはレベル\(selectLebel)")
         quizImageView.image = quizImageArray[0]
         
-        csvArray = loadCSV(fileName: "quiz")
+        csvArray = loadCSV(fileName: "quiz\(selectLebel)")
         print(csvArray)
         
         quizArray = csvArray[quizCount].components(separatedBy: ",")
