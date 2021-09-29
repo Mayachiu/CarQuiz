@@ -36,8 +36,6 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MainTableViewCell
-        
-        cell.scoreQuizNumerLabel.text = "aaa"
         cell.scoreAnswerLabel.text = "正解は○です"
         
         return cell

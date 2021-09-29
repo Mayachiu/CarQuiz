@@ -21,13 +21,6 @@
                         <rect key="frame" x="0.0" y="45" width="51" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6v-WB-Q3d">
-                        <rect key="frame" x="9" y="10" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tq-mf-BWl">
                         <rect key="frame" x="85" y="10" width="199" height="45"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -60,7 +53,6 @@
                 <outlet property="explanation" destination="I1T-5e-J4I" id="lYC-Hu-pf2"/>
                 <outlet property="scoreAnswerLabel" destination="T0c-5b-nSO" id="QSk-d1-l5w"/>
                 <outlet property="scoreQuizImageView" destination="cqr-vB-LbF" id="vJo-Ny-Yp7"/>
-                <outlet property="scoreQuizNumerLabel" destination="O6v-WB-Q3d" id="XVH-wq-D6V"/>
                 <outlet property="scoreQuizTextView" destination="5Tq-mf-BWl" id="vT9-gn-GEL"/>
             </connections>
             <point key="canvasLocation" x="100.00000000000001" y="141.29464285714286"/>
