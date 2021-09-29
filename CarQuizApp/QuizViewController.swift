@@ -45,6 +45,7 @@ class QuizViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let scoreVC = segue.destination as! ScoreViewController
         scoreVC.correct = correctCount
+        scoreVC.cellCount = csvArray.count
     }
     
     @IBAction func btnAction(sender: UIButton) {
