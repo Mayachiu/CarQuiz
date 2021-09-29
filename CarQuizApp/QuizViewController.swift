@@ -46,6 +46,9 @@ class QuizViewController: UIViewController {
         let scoreVC = segue.destination as! ScoreViewController
         scoreVC.correct = correctCount
         scoreVC.cellCount = csvArray.count
+        scoreVC.scoreCSVArray = csvArray
+        scoreVC.scoreQuizArray = quizArray
+        
     }
     
     @IBAction func btnAction(sender: UIButton) {

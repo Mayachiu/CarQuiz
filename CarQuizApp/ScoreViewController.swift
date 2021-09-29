@@ -15,13 +15,17 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     var correct = 0
     var cellCount = 0
+    var scoreCSVArray:[String] = []
+    var scoreQuizArray:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
 
         scoreLabel.text = "\(correct)問正解！"
-        
+      
+        print(scoreCSVArray)
+        print(scoreQuizArray)
         // Do any additional setup after loading the view.
     }
     
@@ -37,7 +41,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MainTableViewCell
         cell.scoreAnswerLabel.text = "正解は○です"
-        
+        cell.scoreQuizTextView.text = scoreQuizArray[0]
         return cell
     }
     
