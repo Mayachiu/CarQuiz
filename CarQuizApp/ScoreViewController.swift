@@ -14,24 +14,18 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var tableView: UITableView!
     
     var correct = 0
-    
     var scoreCSVArray:[String] = []
     var scoreQuizArray:[String] = []
-    
     var scoreQuizNumber = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("以下Score画面----------------------")
+        print("csv")
+        print(scoreCSVArray)
         tableView.register(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
         scoreQuizNumber = scoreCSVArray.count
-
         scoreLabel.text = "\(correct)問正解！"
-      
-        print(scoreCSVArray)
-        
-        print(scoreCSVArray.count)
-        
-        
-        print(scoreQuizArray)
         // Do any additional setup after loading the view.
     }
     
@@ -43,10 +37,9 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MainTableViewCell
         cell.scoreAnswerLabel.text = "正解は○です"
-//        scoreQuizArray = scoreCSVArray[scoreQuizNumber - 1].components(separatedBy: ",")
         scoreQuizArray = scoreCSVArray[indexPath.row].components(separatedBy: ",")
-        print(scoreQuizArray.count)
-        print("aa")
+        print("quiz")
+        print(scoreQuizArray)
         cell.scoreQuizTextView.text = scoreQuizArray[0]
         return cell
     }
