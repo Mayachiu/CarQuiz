@@ -46,7 +46,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         if scoreQuizArray[1] == "1" {
             cell.scoreAnswerLabel.text = "正解は\(scoreQuizArray[2])です"
-        } else if scoreCSVArray[1] == "2" {
+        } else if scoreQuizArray[1] == "2" {
             cell.scoreAnswerLabel.text = "正解は\(scoreQuizArray[3])です"
         }
         
