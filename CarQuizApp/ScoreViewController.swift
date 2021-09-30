@@ -17,6 +17,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var scoreCSVArray:[String] = []
     var scoreQuizArray:[String] = []
     var scoreQuizNumber = 0
+    var scoreQuizImageArray:[UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         print(scoreQuizArray)
      
         cell.scoreQuizNunberLabel.text = "第\(indexPath.row + 1)問"
+        cell.scoreQuizImageView.image = scoreQuizImageArray[indexPath.row]
         cell.scoreAnswerLabel.text = "正解は\(scoreQuizArray[1])です"
         cell.scoreQuizTextView.text = scoreQuizArray[0]
         cell.explanation.text = scoreQuizArray[4]

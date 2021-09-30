@@ -48,7 +48,7 @@ class QuizViewController: UIViewController {
        
         scoreVC.scoreCSVArray = csvArray
         scoreVC.scoreQuizArray = quizArray
-        
+        scoreVC.scoreQuizImageArray = quizImageArray
     }
     
     @IBAction func btnAction(sender: UIButton) {
