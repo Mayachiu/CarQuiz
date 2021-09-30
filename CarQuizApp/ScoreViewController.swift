@@ -21,6 +21,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         print("以下Score画面----------------------")
         print("csv")
         print(scoreCSVArray)
@@ -40,7 +41,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         scoreQuizArray = scoreCSVArray[indexPath.row].components(separatedBy: ",")
         print("quiz")
         print(scoreQuizArray)
-     
+        
         cell.scoreQuizNunberLabel.text = "第\(indexPath.row + 1)問"
         cell.scoreQuizImageView.image = scoreQuizImageArray[indexPath.row]
         
@@ -62,6 +63,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 150
     }
+
     
     @IBAction func toTopButtonAction(_ sender: Any) {
         self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true)
