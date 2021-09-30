@@ -12,6 +12,7 @@ class MainTableViewCell: UITableViewCell {
     @IBOutlet weak var scoreQuizTextView: UITextView!
     @IBOutlet weak var scoreAnswerLabel: UILabel!
     @IBOutlet weak var explanation: UITextView!
+    @IBOutlet weak var scoreQuizNunberLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

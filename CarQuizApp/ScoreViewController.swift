@@ -40,6 +40,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         print("quiz")
         print(scoreQuizArray)
      
+        cell.scoreQuizNunberLabel.text = "第\(indexPath.row + 1)問"
         cell.scoreAnswerLabel.text = "正解は\(scoreQuizArray[1])です"
         cell.scoreQuizTextView.text = scoreQuizArray[0]
         cell.explanation.text = scoreQuizArray[4]
