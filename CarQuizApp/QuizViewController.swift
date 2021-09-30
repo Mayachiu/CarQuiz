@@ -31,9 +31,9 @@ class QuizViewController: UIViewController {
         quizImageView.image = quizImageArray[0]
         
         csvArray = loadCSV(fileName: "quiz\(selectLebel)")
-        print(csvArray)
-        
         quizArray = csvArray[quizCount].components(separatedBy: ",")
+        print("csvです")
+        print(csvArray)
         quizNumberLabel.text = "第\(quizCount + 1)問"
         quizTextView.text = quizArray[0]
         answerButton1.setTitle(quizArray[2], for: .normal)
@@ -90,6 +90,8 @@ class QuizViewController: UIViewController {
         quizCount += 1
         if quizCount < csvArray.count {
         quizArray = csvArray[quizCount].components(separatedBy: ",")
+            print("quizです")
+        print(quizArray)
             quizImageView.image = quizImageArray[quizCount]
         quizNumberLabel.text = "第\(quizCount + 1)問"
         quizTextView.text = quizArray[0]

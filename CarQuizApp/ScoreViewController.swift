@@ -44,7 +44,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MainTableViewCell
         cell.scoreAnswerLabel.text = "正解は○です"
 //        scoreQuizArray = scoreCSVArray[scoreQuizNumber - 1].components(separatedBy: ",")
-        scoreQuizArray = [scoreCSVArray[indexPath.row]]
+        scoreQuizArray = scoreCSVArray[indexPath.row].components(separatedBy: ",")
         print(scoreQuizArray.count)
         print("aa")
         cell.scoreQuizTextView.text = scoreQuizArray[0]
