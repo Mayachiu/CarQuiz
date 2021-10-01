@@ -30,6 +30,10 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        answerButton1.layer.cornerRadius = 65.0
+        answerButton2.layer.cornerRadius = 65.0
+        
+        
         print("選択したのはレベル\(selectLebel)")
         if selectLebel == 1 {
             quizImageView.image = quizImageArray1[0]

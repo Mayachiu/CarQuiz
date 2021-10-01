@@ -39,6 +39,9 @@
                         <viewLayoutGuide key="safeArea" id="MUH-QH-fLU"/>
                         <color key="backgroundColor" red="0.82352948189999997" green="0.89411771299999998" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <connections>
+                        <outlet property="startButton" destination="C6a-3H-Nl3" id="gn6-is-GOb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Txh-iG-veo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,28 +98,6 @@
                                     <action selector="levelButtonActionWithSender:" destination="bRP-11-SlB" eventType="touchUpInside" id="XqG-4W-Clk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHd-Bp-gtD">
-                                <rect key="frame" x="102" y="443" width="170" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94901961089999998" green="0.94117647410000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="レベル4">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="levelButtonActionWithSender:" destination="bRP-11-SlB" eventType="touchUpInside" id="ZSY-zm-VSB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dw2-xP-NYt">
-                                <rect key="frame" x="16" y="617" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="トップに戻る">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="toTopButtonActionSub:" destination="bRP-11-SlB" eventType="touchUpInside" id="Vwt-06-ULe"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJP-7u-o3y">
                                 <rect key="frame" x="102" y="533" width="170" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -129,11 +110,40 @@
                                     <action selector="levelButtonActionWithSender:" destination="bRP-11-SlB" eventType="touchUpInside" id="yQE-4K-llN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dw2-xP-NYt">
+                                <rect key="frame" x="16" y="617" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94901961089999998" green="0.94117647410000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="トップに戻る">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="toTopButtonActionSub:" destination="bRP-11-SlB" eventType="touchUpInside" id="Vwt-06-ULe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHd-Bp-gtD">
+                                <rect key="frame" x="102" y="443" width="170" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94901961089999998" green="0.94117647410000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="レベル4">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="levelButtonActionWithSender:" destination="bRP-11-SlB" eventType="touchUpInside" id="ZSY-zm-VSB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CL6-cB-NKa"/>
                         <color key="backgroundColor" red="0.82352948189999997" green="0.89411771299999998" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
+                        <outlet property="levelButton1" destination="Eoa-2u-8FV" id="fDp-6X-EIj"/>
+                        <outlet property="levelButton2" destination="Axr-OL-DE4" id="UVk-0b-PGm"/>
+                        <outlet property="levelButton3" destination="Mcm-qt-3Dd" id="Mqk-8z-bzt"/>
+                        <outlet property="levelButton4" destination="WHd-Bp-gtD" id="aTT-JV-jZM"/>
+                        <outlet property="levelButton5" destination="pJP-7u-o3y" id="YgP-N8-0lV"/>
+                        <outlet property="toTopButton" destination="Dw2-xP-NYt" id="Eeh-jq-ESJ"/>
                         <segue destination="hhR-Lc-6h3" kind="presentation" identifier="toQuizVC" id="OVz-bL-2Ad"/>
                     </connections>
                 </viewController>
@@ -166,7 +176,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYx-ge-fVq">
-                                <rect key="frame" x="215" y="470" width="122" height="118"/>
+                                <rect key="frame" x="209" y="469" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -182,7 +192,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbc-p9-vg6">
-                                <rect key="frame" x="45" y="477" width="114" height="103"/>
+                                <rect key="frame" x="16" y="469" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -194,7 +204,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ugC-bu-s0B">
-                                <rect key="frame" x="32" y="137" width="305" height="267"/>
+                                <rect key="frame" x="38" y="135" width="305" height="267"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -224,8 +234,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPa-gc-VPt">
-                                <rect key="frame" x="45" y="589" width="92" height="30"/>
+                                <rect key="frame" x="45" y="589" width="121" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94901961089999998" green="0.94117647410000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="トップに戻る">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
@@ -234,8 +245,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhs-Hv-a7T">
-                                <rect key="frame" x="231" y="589" width="108" height="30"/>
+                                <rect key="frame" x="231" y="589" width="108" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94901961089999998" green="0.94117647410000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="問題選択に戻る">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
@@ -266,6 +278,8 @@
                     <connections>
                         <outlet property="scoreLabel" destination="W4E-9b-Hdo" id="Ghy-7g-jDu"/>
                         <outlet property="tableView" destination="Dh9-L9-c6A" id="BFS-HQ-Ppc"/>
+                        <outlet property="toSelectLevelButton" destination="lhs-Hv-a7T" id="ZbV-4d-8Q0"/>
+                        <outlet property="toTopButton" destination="fPa-gc-VPt" id="XLE-bO-17U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="00m-DG-XgT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

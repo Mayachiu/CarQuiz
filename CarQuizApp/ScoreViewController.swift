@@ -12,6 +12,8 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var toTopButton: UIButton!
+    @IBOutlet weak var toSelectLevelButton: UIButton!
     
     var correct = 0
     var scoreCSVArray:[String] = []
@@ -27,6 +29,8 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        toTopButton.layer.cornerRadius = 10.0
+        toSelectLevelButton.layer.cornerRadius = 10.0
 //        print("以下Score画面----------------------")
 //        print("csv")
 //        print(scoreCSVArray)
@@ -46,6 +50,8 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         scoreQuizArray = scoreCSVArray[indexPath.row].components(separatedBy: ",")
 //        print("quiz")
 //        print(scoreQuizArray)
+        
+        cell.scoreQuizTextView.layer.cornerRadius = 5.0
         
         cell.scoreQuizNunberLabel.text = "第\(indexPath.row + 1)問"
         
