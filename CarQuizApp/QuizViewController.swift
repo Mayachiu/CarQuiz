@@ -19,6 +19,7 @@ class QuizViewController: UIViewController {
     let quizImageArray2 = [#imageLiteral(resourceName: "21.png"), #imageLiteral(resourceName: "22.png"), #imageLiteral(resourceName: "23.png"), #imageLiteral(resourceName: "24.png"), #imageLiteral(resourceName: "25.png"), #imageLiteral(resourceName: "26.png"), #imageLiteral(resourceName: "27.png"), #imageLiteral(resourceName: "28.png"), #imageLiteral(resourceName: "29.png"), #imageLiteral(resourceName: "30.png")]
     let quizImageArray3 = [#imageLiteral(resourceName: "31.png"), #imageLiteral(resourceName: "32.png"), #imageLiteral(resourceName: "33.png"), #imageLiteral(resourceName: "34.png"), #imageLiteral(resourceName: "35.png"), #imageLiteral(resourceName: "36.png"), #imageLiteral(resourceName: "37.png"), #imageLiteral(resourceName: "38.png"), #imageLiteral(resourceName: "39.png"), #imageLiteral(resourceName: "40.png")]
     let quizImageArray4 = [#imageLiteral(resourceName: "41.png"), #imageLiteral(resourceName: "42.png"), #imageLiteral(resourceName: "43.png"), #imageLiteral(resourceName: "44.png"), #imageLiteral(resourceName: "45.png"), #imageLiteral(resourceName: "46.png"), #imageLiteral(resourceName: "47.png"), #imageLiteral(resourceName: "48.png"), #imageLiteral(resourceName: "49.png"), #imageLiteral(resourceName: "50.png")]
+    let quizImageArray5 = [#imageLiteral(resourceName: "51.png"), #imageLiteral(resourceName: "52.png"), #imageLiteral(resourceName: "53.png"), #imageLiteral(resourceName: "54.png"), #imageLiteral(resourceName: "55.png"), #imageLiteral(resourceName: "56.png"), #imageLiteral(resourceName: "57.png"), #imageLiteral(resourceName: "58.png"), #imageLiteral(resourceName: "59.png"), #imageLiteral(resourceName: "60.png")]
     
     var csvArray: [String] = []
     var quizArray: [String] = []
@@ -38,6 +39,8 @@ class QuizViewController: UIViewController {
             quizImageView.image = quizImageArray3[0]
         } else if selectLebel == 4 {
             quizImageView.image = quizImageArray4[0]
+        } else if selectLebel == 5 {
+            quizImageView.image = quizImageArray5[0]
         }
         
         
@@ -64,6 +67,7 @@ class QuizViewController: UIViewController {
         scoreVC.scoreQuizImageArray2 = quizImageArray2
         scoreVC.scoreQuizImageArray3 = quizImageArray3
         scoreVC.scoreQuizImageArray4 = quizImageArray4
+        scoreVC.scoreQuizImageArray5 = quizImageArray5
     }
     
     @IBAction func btnAction(sender: UIButton) {
@@ -116,6 +120,8 @@ class QuizViewController: UIViewController {
                 quizImageView.image = quizImageArray3[quizCount]
             } else if selectLebel == 4 {
                 quizImageView.image = quizImageArray4[quizCount]
+            } else if selectLebel == 5 {
+                quizImageView.image = quizImageArray5[quizCount]
             }
             
         quizNumberLabel.text = "第\(quizCount + 1)問"
