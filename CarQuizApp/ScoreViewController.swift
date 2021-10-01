@@ -20,6 +20,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var scoreSelectLabel = 0
     var scoreQuizImageArray1:[UIImage] = []
     var scoreQuizImageArray2:[UIImage] = []
+    var scoreQuizImageArray3:[UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +51,8 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
             cell.scoreQuizImageView.image = scoreQuizImageArray1[indexPath.row]
         } else if scoreSelectLabel == 2 {
             cell.scoreQuizImageView.image = scoreQuizImageArray2[indexPath.row]
+        } else if scoreSelectLabel == 3 {
+            cell.scoreQuizImageView.image = scoreQuizImageArray3[indexPath.row]
         }
        
         
