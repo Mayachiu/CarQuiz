@@ -28,6 +28,9 @@ class SelectLevelViewController: UIViewController {
         performSegue(withIdentifier: "toQuizVC", sender: nil)
     }
     
+    @IBAction func toTopButtonActionSub(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true)
+    }
     /*
     // MARK: - Navigation
 
