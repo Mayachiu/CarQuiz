@@ -17,14 +17,16 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var scoreCSVArray:[String] = []
     var scoreQuizArray:[String] = []
     var scoreQuizNumber = 0
-    var scoreQuizImageArray:[UIImage] = []
+    var scoreSelectLabel = 0
+    var scoreQuizImageArray1:[UIImage] = []
+    var scoreQuizImageArray2:[UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("以下Score画面----------------------")
-        print("csv")
-        print(scoreCSVArray)
+//        print("以下Score画面----------------------")
+//        print("csv")
+//        print(scoreCSVArray)
         tableView.register(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
         scoreQuizNumber = scoreCSVArray.count
         scoreLabel.text = "\(correct)問正解！"
@@ -39,11 +41,17 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MainTableViewCell
         scoreQuizArray = scoreCSVArray[indexPath.row].components(separatedBy: ",")
-        print("quiz")
-        print(scoreQuizArray)
+//        print("quiz")
+//        print(scoreQuizArray)
         
         cell.scoreQuizNunberLabel.text = "第\(indexPath.row + 1)問"
-        cell.scoreQuizImageView.image = scoreQuizImageArray[indexPath.row]
+        
+        if scoreSelectLabel == 1 {
+            cell.scoreQuizImageView.image = scoreQuizImageArray1[indexPath.row]
+        } else if scoreSelectLabel == 2 {
+            cell.scoreQuizImageView.image = scoreQuizImageArray2[indexPath.row]
+        }
+       
         
         if scoreQuizArray[1] == "1" {
             cell.scoreAnswerLabel.text = "正解は\(scoreQuizArray[2])です。"
