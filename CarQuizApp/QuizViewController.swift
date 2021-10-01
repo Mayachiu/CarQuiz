@@ -15,7 +15,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var judgeImageView: UIImageView!
     @IBOutlet weak var quizImageView: UIImageView!
     
-    let quizImageArray = [#imageLiteral(resourceName: "q1.png"), #imageLiteral(resourceName: "q2.png")]
+    let quizImageArray = [#imageLiteral(resourceName: "q1.png"), #imageLiteral(resourceName: "q2.png"), #imageLiteral(resourceName: "q1.png"), #imageLiteral(resourceName: "q2.png"),#imageLiteral(resourceName: "q1.png"), #imageLiteral(resourceName: "q2.png"),#imageLiteral(resourceName: "q1.png"), #imageLiteral(resourceName: "q2.png"),#imageLiteral(resourceName: "q1.png"), #imageLiteral(resourceName: "q2.png")]
     
     
     var csvArray: [String] = []

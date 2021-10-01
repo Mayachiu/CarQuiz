@@ -53,6 +53,9 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         cell.scoreQuizTextView.text = scoreQuizArray[0]
         cell.explanation.text = scoreQuizArray[4]
+        
+        cell.scoreQuizTextView.isScrollEnabled = false
+        cell.explanation.isScrollEnabled = false
         return cell
     }
     
@@ -61,7 +64,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return 150
+    return 180
     }
 
     
