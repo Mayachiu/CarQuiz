@@ -27,7 +27,7 @@ class SelectLevelViewController: UIViewController {
         levelButton3.layer.cornerRadius = 20.0
         levelButton4.layer.cornerRadius = 20.0
         levelButton5.layer.cornerRadius = 20.0
-        toTopButton.layer.cornerRadius = 10.0
+        toTopButton.layer.cornerRadius = 20.0
         // Do any additional setup after loading the view.
     }
     

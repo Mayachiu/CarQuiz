@@ -29,8 +29,8 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        toTopButton.layer.cornerRadius = 10.0
-        toSelectLevelButton.layer.cornerRadius = 10.0
+        toTopButton.layer.cornerRadius = 20.0
+        toSelectLevelButton.layer.cornerRadius = 20.0
 //        print("以下Score画面----------------------")
 //        print("csv")
 //        print(scoreCSVArray)
