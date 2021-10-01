@@ -68,8 +68,8 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
             cell.scoreAnswerLabel.text = "正解は\(scoreQuizArray[3])です。"
         }
         
-        cell.scoreQuizTextView.text = scoreQuizArray[0]
-        cell.explanation.text = scoreQuizArray[4]
+        cell.scoreQuizTextView.text = "問題: \(scoreQuizArray[0])"
+        cell.explanation.text = "解説: \(scoreQuizArray[4])"
         
         cell.scoreQuizTextView.isScrollEnabled = false
         cell.explanation.isScrollEnabled = false
