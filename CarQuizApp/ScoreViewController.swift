@@ -46,9 +46,9 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.scoreQuizImageView.image = scoreQuizImageArray[indexPath.row]
         
         if scoreQuizArray[1] == "1" {
-            cell.scoreAnswerLabel.text = "正解は\(scoreQuizArray[2])です"
+            cell.scoreAnswerLabel.text = "正解は\(scoreQuizArray[2])です。"
         } else if scoreQuizArray[1] == "2" {
-            cell.scoreAnswerLabel.text = "正解は\(scoreQuizArray[3])です"
+            cell.scoreAnswerLabel.text = "正解は\(scoreQuizArray[3])です。"
         }
         
         cell.scoreQuizTextView.text = scoreQuizArray[0]

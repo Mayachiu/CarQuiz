@@ -20,6 +20,16 @@
 		1AE3C7712704D98700378DD7 /* quiz3.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C7702704D98700378DD7 /* quiz3.csv */; };
 		1AE3C7732704D9BD00378DD7 /* quiz4.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C7722704D9BD00378DD7 /* quiz4.csv */; };
 		1AE3C7752704D9D000378DD7 /* quiz5.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C7742704D9D000378DD7 /* quiz5.csv */; };
+		1AE3C7A02707020900378DD7 /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C7962707020900378DD7 /* 12.png */; };
+		1AE3C7A12707020900378DD7 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C7972707020900378DD7 /* 11.png */; };
+		1AE3C7A22707020900378DD7 /* 17.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C7982707020900378DD7 /* 17.png */; };
+		1AE3C7A32707020900378DD7 /* 18.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C7992707020900378DD7 /* 18.png */; };
+		1AE3C7A42707020900378DD7 /* 20.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C79A2707020900378DD7 /* 20.png */; };
+		1AE3C7A52707020900378DD7 /* 13.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C79B2707020900378DD7 /* 13.png */; };
+		1AE3C7A62707020900378DD7 /* 14.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C79C2707020900378DD7 /* 14.png */; };
+		1AE3C7A72707020900378DD7 /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C79D2707020900378DD7 /* 15.png */; };
+		1AE3C7A82707020900378DD7 /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C79E2707020900378DD7 /* 16.png */; };
+		1AE3C7A92707020900378DD7 /* 19.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C79F2707020900378DD7 /* 19.png */; };
 		1AF059D2270232210071F830 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF059D1270232210071F830 /* QuizViewController.swift */; };
 		1AF059D42702337B0071F830 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF059D32702337B0071F830 /* ScoreViewController.swift */; };
 		1AF059D627028B0C0071F830 /* quiz1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1AF059D527028B0C0071F830 /* quiz1.csv */; };
@@ -45,6 +55,16 @@
 		1AE3C7702704D98700378DD7 /* quiz3.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz3.csv; sourceTree = "<group>"; };
 		1AE3C7722704D9BD00378DD7 /* quiz4.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz4.csv; sourceTree = "<group>"; };
 		1AE3C7742704D9D000378DD7 /* quiz5.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz5.csv; sourceTree = "<group>"; };
+		1AE3C7962707020900378DD7 /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
+		1AE3C7972707020900378DD7 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		1AE3C7982707020900378DD7 /* 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 17.png; sourceTree = "<group>"; };
+		1AE3C7992707020900378DD7 /* 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 18.png; sourceTree = "<group>"; };
+		1AE3C79A2707020900378DD7 /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
+		1AE3C79B2707020900378DD7 /* 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13.png; sourceTree = "<group>"; };
+		1AE3C79C2707020900378DD7 /* 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14.png; sourceTree = "<group>"; };
+		1AE3C79D2707020900378DD7 /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
+		1AE3C79E2707020900378DD7 /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
+		1AE3C79F2707020900378DD7 /* 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 19.png; sourceTree = "<group>"; };
 		1AF059D1270232210071F830 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		1AF059D32702337B0071F830 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		1AF059D527028B0C0071F830 /* quiz1.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz1.csv; sourceTree = "<group>"; };
@@ -109,6 +129,16 @@
 		1AF059D72702952E0071F830 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				1AE3C7972707020900378DD7 /* 11.png */,
+				1AE3C7962707020900378DD7 /* 12.png */,
+				1AE3C79B2707020900378DD7 /* 13.png */,
+				1AE3C79C2707020900378DD7 /* 14.png */,
+				1AE3C79D2707020900378DD7 /* 15.png */,
+				1AE3C79E2707020900378DD7 /* 16.png */,
+				1AE3C7982707020900378DD7 /* 17.png */,
+				1AE3C7992707020900378DD7 /* 18.png */,
+				1AE3C79F2707020900378DD7 /* 19.png */,
+				1AE3C79A2707020900378DD7 /* 20.png */,
 				1AF059D82702952E0071F830 /* correct.png */,
 				1AF059D92702952E0071F830 /* incorrect.png */,
 				1A4A45A02702D30B00155D5E /* q1.png */,
@@ -174,16 +204,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AE3C7A72707020900378DD7 /* 15.png in Resources */,
 				1AF059DF2702C20F0071F830 /* quiz2.csv in Resources */,
+				1AE3C7A22707020900378DD7 /* 17.png in Resources */,
 				1AF059DA2702952E0071F830 /* correct.png in Resources */,
+				1AE3C7A92707020900378DD7 /* 19.png in Resources */,
+				1AE3C7A02707020900378DD7 /* 12.png in Resources */,
 				1AF059DB2702952E0071F830 /* incorrect.png in Resources */,
 				1A4A45A22702D30B00155D5E /* q1.png in Resources */,
 				1A60F71A2704C01900D4DBC7 /* MainTableViewCell.xib in Resources */,
 				1A1603592701E5EC00C9F81E /* LaunchScreen.storyboard in Resources */,
 				1A1603562701E5EC00C9F81E /* Assets.xcassets in Resources */,
+				1AE3C7A52707020900378DD7 /* 13.png in Resources */,
+				1AE3C7A62707020900378DD7 /* 14.png in Resources */,
+				1AE3C7A42707020900378DD7 /* 20.png in Resources */,
 				1AE3C7712704D98700378DD7 /* quiz3.csv in Resources */,
 				1AE3C7732704D9BD00378DD7 /* quiz4.csv in Resources */,
+				1AE3C7A32707020900378DD7 /* 18.png in Resources */,
+				1AE3C7A12707020900378DD7 /* 11.png in Resources */,
 				1A1603542701E5EB00C9F81E /* Main.storyboard in Resources */,
+				1AE3C7A82707020900378DD7 /* 16.png in Resources */,
 				1A4A45A32702D30B00155D5E /* q2.png in Resources */,
 				1AE3C7752704D9D000378DD7 /* quiz5.csv in Resources */,
 				1AF059D627028B0C0071F830 /* quiz1.csv in Resources */,
