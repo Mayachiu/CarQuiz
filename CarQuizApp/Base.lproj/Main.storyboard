@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6a-3H-Nl3">
-                                <rect key="frame" x="50" y="414" width="274" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6a-3H-Nl3">
+                                <rect key="frame" x="50" y="414" width="275" height="60"/>
                                 <color key="backgroundColor" red="0.94901961089999998" green="0.94117647410000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="スタート">
@@ -28,16 +27,14 @@
                                     <segue destination="bRP-11-SlB" kind="presentation" id="ZuS-5d-GCg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="標識クイズ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnd-Gv-CvV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="標識クイズ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnd-Gv-CvV">
                                 <rect key="frame" x="62" y="123" width="251" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMB-51-sJs">
-                                <rect key="frame" x="134" y="576" width="107" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMB-51-sJs">
+                                <rect key="frame" x="110" y="584" width="155" height="28"/>
                                 <color key="backgroundColor" red="0.95024949309999995" green="0.9425414205" blue="0.84146243330000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="お問い合わせ">
@@ -50,6 +47,18 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MUH-QH-fLU"/>
                         <color key="backgroundColor" red="0.82352941176470584" green="0.89411764705882346" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="oMB-51-sJs" firstAttribute="leading" secondItem="MUH-QH-fLU" secondAttribute="leading" constant="110" id="21E-v2-O7K"/>
+                            <constraint firstItem="C6a-3H-Nl3" firstAttribute="leading" secondItem="MUH-QH-fLU" secondAttribute="leading" constant="50" id="2Iy-84-SF0"/>
+                            <constraint firstItem="oMB-51-sJs" firstAttribute="top" secondItem="C6a-3H-Nl3" secondAttribute="bottom" constant="110" id="3BA-E8-QbV"/>
+                            <constraint firstItem="MUH-QH-fLU" firstAttribute="bottom" secondItem="oMB-51-sJs" secondAttribute="bottom" constant="55" id="6HL-YP-P4E"/>
+                            <constraint firstItem="C6a-3H-Nl3" firstAttribute="centerX" secondItem="f6N-dj-7xE" secondAttribute="centerX" id="6Uo-Cv-gQp"/>
+                            <constraint firstItem="oMB-51-sJs" firstAttribute="centerX" secondItem="f6N-dj-7xE" secondAttribute="centerX" id="IGE-GW-tFF"/>
+                            <constraint firstItem="MUH-QH-fLU" firstAttribute="trailing" secondItem="C6a-3H-Nl3" secondAttribute="trailing" constant="50" id="VVg-bP-wx9"/>
+                            <constraint firstItem="bnd-Gv-CvV" firstAttribute="top" secondItem="MUH-QH-fLU" secondAttribute="top" constant="123" id="VZz-j9-pfT"/>
+                            <constraint firstItem="bnd-Gv-CvV" firstAttribute="centerX" secondItem="f6N-dj-7xE" secondAttribute="centerX" id="hV8-1X-KUo"/>
+                            <constraint firstItem="MUH-QH-fLU" firstAttribute="trailing" secondItem="oMB-51-sJs" secondAttribute="trailing" constant="110" id="jbL-3e-Ny1"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="contactButtonLabel" destination="oMB-51-sJs" id="Qgy-Pq-dBh"/>
@@ -58,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Txh-iG-veo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-431.19999999999999" y="-84.107946026986511"/>
+            <point key="canvasLocation" x="-426" y="-84"/>
         </scene>
         <!--Select Level View Controller-->
         <scene sceneID="zXE-BQ-ZWg">
