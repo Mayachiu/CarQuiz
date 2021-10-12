@@ -8,6 +8,7 @@
 import UIKit
 
 class MainTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var scoreQuizImageView: UIImageView!
     @IBOutlet weak var scoreQuizTextView: UITextView!
     @IBOutlet weak var scoreAnswerLabel: UILabel!
@@ -18,10 +19,10 @@ class MainTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     

@@ -8,7 +8,7 @@
 import UIKit
 
 class SelectLevelViewController: UIViewController {
-
+    
     @IBOutlet weak var levelButton1: UIButton!
     @IBOutlet weak var levelButton2: UIButton!
     @IBOutlet weak var levelButton3: UIButton!
@@ -20,7 +20,7 @@ class SelectLevelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         levelButton1.layer.cornerRadius = 20.0
         levelButton2.layer.cornerRadius = 20.0
         levelButton3.layer.cornerRadius = 20.0
@@ -36,7 +36,6 @@ class SelectLevelViewController: UIViewController {
     }
     
     @IBAction func levelButtonAction(sender: UIButton) {
-        print(sender.tag)
         selectTag = sender.tag
         performSegue(withIdentifier: "toQuizVC", sender: nil)
     }
@@ -44,14 +43,15 @@ class SelectLevelViewController: UIViewController {
     @IBAction func toTopButtonActionSub(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true)
     }
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

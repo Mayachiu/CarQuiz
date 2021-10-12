@@ -9,7 +9,6 @@ import UIKit
 
 class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var toTopButton: UIButton!
@@ -31,16 +30,13 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         toTopButton.layer.cornerRadius = 20.0
         toSelectLevelButton.layer.cornerRadius = 20.0
-//        print("以下Score画面----------------------")
-//        print("csv")
-//        print(scoreCSVArray)
+        
         tableView.register(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
         scoreQuizNumber = scoreCSVArray.count
         scoreLabel.text = "\(correct)問正解"
         // Do any additional setup after loading the view.
     }
     
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return scoreQuizNumber
     }
@@ -48,8 +44,6 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MainTableViewCell
         scoreQuizArray = scoreCSVArray[indexPath.row].components(separatedBy: ",")
-//        print("quiz")
-//        print(scoreQuizArray)
         
         cell.scoreQuizTextView.layer.cornerRadius = 5.0
         
@@ -66,7 +60,6 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         } else if scoreSelectLabel == 5 {
             cell.scoreQuizImageView.image = scoreQuizImageArray5[indexPath.row]
         }
-       
         
         if scoreQuizArray[1] == "1" {
             cell.scoreAnswerLabel.text = "正解は\(scoreQuizArray[2])です。"
@@ -87,9 +80,9 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return 180
+        return 180
     }
-
+    
     
     @IBAction func toTopButtonAction(_ sender: Any) {
         self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true)
@@ -101,25 +94,23 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-            // 背景色を変更する
-            view.tintColor = UIColor(hex: "F3F0D7")
-        }
-
-    
- 
+        // 背景色を変更する
+        view.tintColor = UIColor(hex: "F3F0D7")
+    }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 
+//文字コードで色指定するため
 extension UIColor {
     convenience init(hex: String, alpha: CGFloat = 1.0) {
         let v = Int("000000" + hex, radix: 16) ?? 0

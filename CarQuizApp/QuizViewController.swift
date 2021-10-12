@@ -8,6 +8,7 @@
 import UIKit
 
 class QuizViewController: UIViewController {
+    
     @IBOutlet weak var quizNumberLabel: UILabel!
     @IBOutlet weak var quizTextView: UITextView!
     @IBOutlet weak var answerButton1: UIButton!
@@ -15,7 +16,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var judgeImageView: UIImageView!
     @IBOutlet weak var quizImageView: UIImageView!
     
-    let quizImageArray1 = [#imageLiteral(resourceName: "11.png"),#imageLiteral(resourceName: "12.png"),#imageLiteral(resourceName: "13.png"),#imageLiteral(resourceName: "14.png"),#imageLiteral(resourceName: "15.png"),#imageLiteral(resourceName: "16.png"),#imageLiteral(resourceName: "17.png"),#imageLiteral(resourceName: "18.png"),#imageLiteral(resourceName: "19.png"),#imageLiteral(resourceName: "20.png")]
+    let quizImageArray1 = [#imageLiteral(resourceName: "11.png"), #imageLiteral(resourceName: "12.png"), #imageLiteral(resourceName: "13.png"), #imageLiteral(resourceName: "14.png"), #imageLiteral(resourceName: "15.png"), #imageLiteral(resourceName: "16.png"), #imageLiteral(resourceName: "17.png"), #imageLiteral(resourceName: "18.png"), #imageLiteral(resourceName: "19.png"), #imageLiteral(resourceName: "20.png")]
     let quizImageArray2 = [#imageLiteral(resourceName: "21.png"), #imageLiteral(resourceName: "22.png"), #imageLiteral(resourceName: "23.png"), #imageLiteral(resourceName: "24.png"), #imageLiteral(resourceName: "25.png"), #imageLiteral(resourceName: "26.png"), #imageLiteral(resourceName: "27.png"), #imageLiteral(resourceName: "28.png"), #imageLiteral(resourceName: "29.png"), #imageLiteral(resourceName: "30.png")]
     let quizImageArray3 = [#imageLiteral(resourceName: "31.png"), #imageLiteral(resourceName: "32.png"), #imageLiteral(resourceName: "33.png"), #imageLiteral(resourceName: "34.png"), #imageLiteral(resourceName: "35.png"), #imageLiteral(resourceName: "36.png"), #imageLiteral(resourceName: "37.png"), #imageLiteral(resourceName: "38.png"), #imageLiteral(resourceName: "39.png"), #imageLiteral(resourceName: "40.png")]
     let quizImageArray4 = [#imageLiteral(resourceName: "41.png"), #imageLiteral(resourceName: "42.png"), #imageLiteral(resourceName: "43.png"), #imageLiteral(resourceName: "44.png"), #imageLiteral(resourceName: "45.png"), #imageLiteral(resourceName: "46.png"), #imageLiteral(resourceName: "47.png"), #imageLiteral(resourceName: "48.png"), #imageLiteral(resourceName: "49.png"), #imageLiteral(resourceName: "50.png")]
@@ -29,11 +30,10 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         answerButton1.layer.cornerRadius = 30
         answerButton2.layer.cornerRadius = 30
-                
-        print("選択したのはレベル\(selectLebel)")
+        
         if selectLebel == 1 {
             quizImageView.image = quizImageArray1[0]
         } else if selectLebel == 2 {
@@ -46,23 +46,20 @@ class QuizViewController: UIViewController {
             quizImageView.image = quizImageArray5[0]
         }
         
-        
         csvArray = loadCSV(fileName: "quiz\(selectLebel)")
         quizArray = csvArray[quizCount].components(separatedBy: ",")
-//        print("csvです")
-//        print(csvArray)
         quizNumberLabel.text = "第\(quizCount + 1)問"
         quizTextView.text = quizArray[0]
+        
         answerButton1.setTitle(quizArray[2], for: .normal)
         answerButton2.setTitle(quizArray[3], for: .normal)
         // Do any additional setup after loading the view.
     }
     
-    //画面遷移するときにコードを渡す
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let scoreVC = segue.destination as! ScoreViewController
+        
         scoreVC.correct = correctCount
-       
         scoreVC.scoreCSVArray = csvArray
         scoreVC.scoreQuizArray = quizArray
         scoreVC.scoreSelectLabel = selectLebel
@@ -76,16 +73,15 @@ class QuizViewController: UIViewController {
     @IBAction func btnAction(sender: UIButton) {
         if sender.tag == Int(quizArray[1]) {
             correctCount += 1
-            print("正解")
             judgeImageView.image = UIImage(named: "correct")
         } else {
-            print("不正解")
             judgeImageView.image = UIImage(named: "incorrect")
         }
+        
         judgeImageView.isHidden = false
         answerButton1.isEnabled = false
         answerButton2.isEnabled = false
-        print("スコア:\(correctCount)")
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.judgeImageView.isHidden = true
             self.answerButton1.isEnabled = true
@@ -103,6 +99,7 @@ class QuizViewController: UIViewController {
             csvArray = lineChange.components(separatedBy: "\n")
             csvArray.removeLast()
         } catch {
+            //エラー受け取るようにしておく
             print("エラー")
         }
         return csvArray
@@ -110,10 +107,9 @@ class QuizViewController: UIViewController {
     
     func nextQuiz() {
         quizCount += 1
+        
         if quizCount < csvArray.count {
-        quizArray = csvArray[quizCount].components(separatedBy: ",")
-//            print("quizです")
-//        print(quizArray)
+            quizArray = csvArray[quizCount].components(separatedBy: ",")
             
             if selectLebel == 1 {
                 quizImageView.image = quizImageArray1[quizCount]
@@ -127,24 +123,23 @@ class QuizViewController: UIViewController {
                 quizImageView.image = quizImageArray5[quizCount]
             }
             
-        quizNumberLabel.text = "第\(quizCount + 1)問"
-        quizTextView.text = quizArray[0]
-        answerButton1.setTitle(quizArray[2], for: .normal)
-        answerButton2.setTitle(quizArray[3], for: .normal)
+            quizNumberLabel.text = "第\(quizCount + 1)問"
+            quizTextView.text = quizArray[0]
+            answerButton1.setTitle(quizArray[2], for: .normal)
+            answerButton2.setTitle(quizArray[3], for: .normal)
         } else {
             performSegue(withIdentifier: "toScoreVC", sender: nil)
         }
     }
-        
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
