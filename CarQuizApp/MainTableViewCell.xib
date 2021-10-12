@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="70" width="70" height="50"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <color key="backgroundColor" red="0.82352941180000006" green="0.89411771299999998" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="cqr-vB-LbF" secondAttribute="trailing" id="6bD-Gs-OMW"/>
                             <constraint firstItem="peV-tR-aUA" firstAttribute="leading" secondItem="TT7-OI-sCd" secondAttribute="leading" id="BQp-Qh-1Dq"/>
@@ -57,7 +57,7 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="設問の通り。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1T-5e-J4I">
                                 <rect key="frame" x="0.0" y="99.5" width="301" height="60.5"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.89411771299999998" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -90,12 +90,6 @@
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
