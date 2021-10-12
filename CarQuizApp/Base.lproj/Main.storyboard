@@ -305,17 +305,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhs-Hv-a7T">
-                                <rect key="frame" x="209" y="605" width="150" height="36"/>
-                                <color key="backgroundColor" red="0.94901961089999998" green="0.94117647410000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="問題選択に戻る">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="toSelectButtonAction:" destination="mn4-xa-oak" eventType="touchUpInside" id="lTg-6J-CKS"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dh9-L9-c6A">
                                 <rect key="frame" x="0.0" y="87" width="375" height="493"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
@@ -330,31 +319,53 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPa-gc-VPt">
-                                <rect key="frame" x="16" y="589" width="135" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94901961089999998" green="0.94117647410000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="トップに戻る">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="toTopButtonAction:" destination="mn4-xa-oak" eventType="touchUpInside" id="8IR-IB-PuP"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="uoS-dQ-Bdc">
+                                <rect key="frame" x="30" y="605" width="315" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPa-gc-VPt">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="36"/>
+                                        <color key="backgroundColor" red="0.94901961089999998" green="0.94117647410000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="yPR-p2-3gX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="トップに戻る">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toTopButtonAction:" destination="mn4-xa-oak" eventType="touchUpInside" id="8IR-IB-PuP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhs-Hv-a7T">
+                                        <rect key="frame" x="165" y="0.0" width="150" height="36"/>
+                                        <color key="backgroundColor" red="0.94901961089999998" green="0.94117647410000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="386-Nd-I4c"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="問題選択に戻る">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toSelectButtonAction:" destination="mn4-xa-oak" eventType="touchUpInside" id="lTg-6J-CKS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xPD-l5-sJD"/>
                         <color key="backgroundColor" red="0.82352948189999997" green="0.89411771299999998" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Dh9-L9-c6A" firstAttribute="leading" secondItem="xPD-l5-sJD" secondAttribute="leading" id="AkC-q3-neY"/>
-                            <constraint firstItem="lhs-Hv-a7T" firstAttribute="top" secondItem="Dh9-L9-c6A" secondAttribute="bottom" constant="25" id="C3f-kJ-nsg"/>
                             <constraint firstItem="W4E-9b-Hdo" firstAttribute="top" secondItem="xPD-l5-sJD" secondAttribute="top" constant="32" id="H12-tv-Z0G"/>
                             <constraint firstItem="xPD-l5-sJD" firstAttribute="trailing" secondItem="W4E-9b-Hdo" secondAttribute="trailing" constant="16" id="PUd-fF-J4d"/>
                             <constraint firstItem="W4E-9b-Hdo" firstAttribute="leading" secondItem="xPD-l5-sJD" secondAttribute="leading" constant="16" id="ZXB-3R-7Wh"/>
+                            <constraint firstItem="uoS-dQ-Bdc" firstAttribute="centerX" secondItem="uhw-IA-nUl" secondAttribute="centerX" id="ez3-p4-mbF"/>
                             <constraint firstItem="Dh9-L9-c6A" firstAttribute="centerY" secondItem="uhw-IA-nUl" secondAttribute="centerY" id="hCB-jp-RIy"/>
                             <constraint firstItem="Dh9-L9-c6A" firstAttribute="trailing" secondItem="xPD-l5-sJD" secondAttribute="trailing" id="js9-sV-rCv"/>
                             <constraint firstItem="Dh9-L9-c6A" firstAttribute="trailing" secondItem="xPD-l5-sJD" secondAttribute="trailing" id="ofj-Fb-9Sw"/>
                             <constraint firstItem="Dh9-L9-c6A" firstAttribute="top" secondItem="W4E-9b-Hdo" secondAttribute="bottom" constant="19" id="tLK-P6-J3n"/>
+                            <constraint firstItem="uoS-dQ-Bdc" firstAttribute="top" secondItem="Dh9-L9-c6A" secondAttribute="bottom" constant="25" id="uld-5u-OZ6"/>
                         </constraints>
                     </view>
                     <connections>
