@@ -28,8 +28,6 @@ class QuizViewController: UIViewController {
     var correctCount = 0
     var selectLebel = 0
     
-    var correctArray = [0, 0, 0, 0, 0, 0, 0, 0, 0 ,0]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
