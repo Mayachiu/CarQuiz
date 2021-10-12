@@ -28,6 +28,8 @@ class QuizViewController: UIViewController {
     var correctCount = 0
     var selectLebel = 0
     
+    var correctArray = [0, 0, 0, 0, 0, 0, 0, 0, 0 ,0]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -70,14 +72,23 @@ class QuizViewController: UIViewController {
         scoreVC.scoreQuizImageArray3 = quizImageArray3
         scoreVC.scoreQuizImageArray4 = quizImageArray4
         scoreVC.scoreQuizImageArray5 = quizImageArray5
+        
+        scoreVC.scoreCorectArray = correctArray
     }
     
     @IBAction func btnAction(sender: UIButton) {
         if sender.tag == Int(quizArray[1]) {
+            //正解
             correctCount += 1
             judgeImageView.image = UIImage(named: "correct")
+            
+            //quizCountは0から始まる、Arrayは0から始まるのでそのままでOK
+            correctArray[quizCount] += 1
         } else {
+            //不正解
             judgeImageView.image = UIImage(named: "incorrect")
+            
+            correctArray[quizCount] += 0
         }
         
         judgeImageView.isHidden = false
@@ -110,7 +121,7 @@ class QuizViewController: UIViewController {
     
     func nextQuiz() {
         quizCount += 1
-        
+  
         if quizCount < csvArray.count {
             quizArray = csvArray[quizCount].components(separatedBy: ",")
             
