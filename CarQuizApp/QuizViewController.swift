@@ -31,9 +31,6 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        answerButton1.layer.cornerRadius = 30
-        answerButton2.layer.cornerRadius = 30
-        
         if selectLebel == 1 {
             quizImageView.image = quizImageArray1[0]
         } else if selectLebel == 2 {
@@ -51,8 +48,13 @@ class QuizViewController: UIViewController {
         quizNumberLabel.text = "第\(quizCount + 1)問"
         quizTextView.text = quizArray[0]
         
+        //今後のためにボタンの名前は配列から取る
         answerButton1.setTitle(quizArray[2], for: .normal)
         answerButton2.setTitle(quizArray[3], for: .normal)
+
+        answerButton1.layer.cornerRadius = 30
+        answerButton2.layer.cornerRadius = 30
+        
         // Do any additional setup after loading the view.
     }
     
@@ -82,6 +84,7 @@ class QuizViewController: UIViewController {
         answerButton1.isEnabled = false
         answerButton2.isEnabled = false
         
+        //秒数は要検討
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.judgeImageView.isHidden = true
             self.answerButton1.isEnabled = true

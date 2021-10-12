@@ -36,6 +36,7 @@ class SelectLevelViewController: UIViewController {
     }
     
     @IBAction func levelButtonAction(sender: UIButton) {
+        //タグで判別
         selectTag = sender.tag
         performSegue(withIdentifier: "toQuizVC", sender: nil)
     }

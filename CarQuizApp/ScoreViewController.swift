@@ -28,12 +28,13 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        toTopButton.layer.cornerRadius = 20.0
-        toSelectLevelButton.layer.cornerRadius = 20.0
-        
         tableView.register(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
         scoreQuizNumber = scoreCSVArray.count
         scoreLabel.text = "\(correct)問正解"
+
+        toTopButton.layer.cornerRadius = 20.0
+        toSelectLevelButton.layer.cornerRadius = 20.0
+        
         // Do any additional setup after loading the view.
     }
     

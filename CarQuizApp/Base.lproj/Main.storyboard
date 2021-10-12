@@ -217,7 +217,7 @@
                                     <constraint firstAttribute="width" secondItem="ehA-C8-nBq" secondAttribute="height" multiplier="60:41" id="doY-RU-1kk"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="この標識がある自動車専用道路では、トレーラーは本線車道の最も左側の車両通行帯を通行しなければならない。" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="5ei-WD-PJB">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="この標識がある自動車専用道路では、トレーラーは本線車道の最も左側の車両通行帯を通行しなければならない。" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ei-WD-PJB">
                                 <rect key="frame" x="20" y="78" width="335" height="186"/>
                                 <color key="backgroundColor" red="0.82352941180000006" green="0.89411764709999997" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
