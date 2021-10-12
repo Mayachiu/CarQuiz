@@ -35,11 +35,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMB-51-sJs">
+                                <rect key="frame" x="134" y="576" width="107" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95024949309999995" green="0.9425414205" blue="0.84146243330000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="お問い合わせ">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="contactButtonAction:" destination="Ji6-1d-giF" eventType="touchUpInside" id="vBy-vG-3jo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MUH-QH-fLU"/>
-                        <color key="backgroundColor" red="0.82352948189999997" green="0.89411771299999998" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.82352941176470584" green="0.89411764705882346" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
+                        <outlet property="contactButtonLabel" destination="oMB-51-sJs" id="Qgy-Pq-dBh"/>
                         <outlet property="startButton" destination="C6a-3H-Nl3" id="gn6-is-GOb"/>
                     </connections>
                 </viewController>

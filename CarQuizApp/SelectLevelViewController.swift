@@ -9,7 +9,6 @@ import UIKit
 
 class SelectLevelViewController: UIViewController {
 
-    
     @IBOutlet weak var levelButton1: UIButton!
     @IBOutlet weak var levelButton2: UIButton!
     @IBOutlet weak var levelButton3: UIButton!
