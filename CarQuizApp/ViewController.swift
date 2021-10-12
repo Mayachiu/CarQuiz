@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         startButton.layer.cornerRadius = 30.0
         contactButtonLabel.layer.cornerRadius = 20.0
         // Do any additional setup after loading the view.
