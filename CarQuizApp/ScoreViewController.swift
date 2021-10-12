@@ -36,7 +36,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
 //        print(scoreCSVArray)
         tableView.register(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
         scoreQuizNumber = scoreCSVArray.count
-        scoreLabel.text = "\(correct)問正解！"
+        scoreLabel.text = "\(correct)問正解"
         // Do any additional setup after loading the view.
     }
     
