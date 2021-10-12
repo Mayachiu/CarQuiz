@@ -72,8 +72,6 @@ class QuizViewController: UIViewController {
         scoreVC.scoreQuizImageArray3 = quizImageArray3
         scoreVC.scoreQuizImageArray4 = quizImageArray4
         scoreVC.scoreQuizImageArray5 = quizImageArray5
-        
-        scoreVC.scoreCorectArray = correctArray
     }
     
     @IBAction func btnAction(sender: UIButton) {
@@ -81,14 +79,11 @@ class QuizViewController: UIViewController {
             //正解
             correctCount += 1
             judgeImageView.image = UIImage(named: "correct")
-            
-            //quizCountは0から始まる、Arrayは0から始まるのでそのままでOK
-            correctArray[quizCount] += 1
+
         } else {
             //不正解
             judgeImageView.image = UIImage(named: "incorrect")
-            
-            correctArray[quizCount] += 0
+
         }
         
         judgeImageView.isHidden = false
