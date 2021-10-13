@@ -25,6 +25,8 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var scoreQuizImageArray4:[UIImage] = []
     var scoreQuizImageArray5:[UIImage] = []
     
+    var scoreCorectArray: [Int] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -49,6 +51,11 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.scoreQuizTextView.layer.cornerRadius = 5.0
         
         cell.scoreQuizNunberLabel.text = "第\(indexPath.row + 1)問"
+        
+        //間違いなら0
+        if scoreCorectArray[indexPath.row] == 0 {
+            cell.scoreQuizNunberLabel.textColor = .red
+        }
         
         if scoreSelectLabel == 1 {
             cell.scoreQuizImageView.image = scoreQuizImageArray1[indexPath.row]
