@@ -28,6 +28,8 @@ class QuizViewController: UIViewController {
     var correctCount = 0
     var selectLebel = 0
     
+    var correctArray: [UIImage] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -70,6 +72,8 @@ class QuizViewController: UIViewController {
         scoreVC.scoreQuizImageArray3 = quizImageArray3
         scoreVC.scoreQuizImageArray4 = quizImageArray4
         scoreVC.scoreQuizImageArray5 = quizImageArray5
+        
+        scoreVC.scoreCorrectArray = correctArray
     }
     
     @IBAction func btnAction(sender: UIButton) {
@@ -77,11 +81,15 @@ class QuizViewController: UIViewController {
             //正解
             correctCount += 1
             judgeImageView.image = UIImage(named: "correct")
-
+            
+            correctArray.append(UIImage(named: "correct")!)
+            print(correctArray)
         } else {
             //不正解
             judgeImageView.image = UIImage(named: "incorrect")
 
+            correctArray.append(UIImage(named: "incorrect")!)
+            print(correctArray)
         }
         
         judgeImageView.isHidden = false

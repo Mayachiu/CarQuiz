@@ -25,6 +25,8 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var scoreQuizImageArray4:[UIImage] = []
     var scoreQuizImageArray5:[UIImage] = []
 
+    var scoreCorrectArray: [UIImage] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -35,6 +37,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         toTopButton.layer.cornerRadius = 20.0
         toSelectLevelButton.layer.cornerRadius = 20.0
         
+//        print(scoreCorrectArray)
         // Do any additional setup after loading the view.
     }
     
@@ -70,6 +73,8 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         cell.scoreQuizTextView.text = "問題: \(scoreQuizArray[0])"
         cell.explanation.text = "解説: \(scoreQuizArray[4])"
+        
+        cell.scoreCorrectImageView.image = scoreCorrectArray[indexPath.row]
         
         cell.scoreQuizTextView.isScrollEnabled = false
         cell.explanation.isScrollEnabled = false
