@@ -1,0 +1,51 @@
+
+/* Class = "UITextView"; text = "この標識がある自動車専用道路では、トレーラーは本線車道の最も左側の車両通行帯を通行しなければならない。"; ObjectID = "5ei-WD-PJB"; */
+"5ei-WD-PJB.text" = "この標識がある自動車専用道路では、トレーラーは本線車道の最も左側の車両通行帯を通行しなければならない。";
+
+/* Class = "UIButton"; normalTitle = "パート2"; ObjectID = "Axr-OL-DE4"; */
+"Axr-OL-DE4.normalTitle" = "パート2";
+
+/* Class = "UIButton"; normalTitle = "スタート"; ObjectID = "C6a-3H-Nl3"; */
+"C6a-3H-Nl3.normalTitle" = "スタート";
+
+/* Class = "UIButton"; normalTitle = "トップに戻る"; ObjectID = "Dw2-xP-NYt"; */
+"Dw2-xP-NYt.normalTitle" = "トップに戻る";
+
+/* Class = "UIButton"; normalTitle = "誤"; ObjectID = "EYx-ge-fVq"; */
+"EYx-ge-fVq.normalTitle" = "誤";
+
+/* Class = "UIButton"; normalTitle = "パート1"; ObjectID = "Eoa-2u-8FV"; */
+"Eoa-2u-8FV.normalTitle" = "パート1";
+
+/* Class = "UIButton"; normalTitle = "パート3"; ObjectID = "Mcm-qt-3Dd"; */
+"Mcm-qt-3Dd.normalTitle" = "パート3";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "W4E-9b-Hdo"; */
+"W4E-9b-Hdo.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "パート4"; ObjectID = "WHd-Bp-gtD"; */
+"WHd-Bp-gtD.normalTitle" = "パート4";
+
+/* Class = "UILabel"; text = "標識クイズ"; ObjectID = "bnd-Gv-CvV"; */
+"bnd-Gv-CvV.text" = "標識クイズ";
+
+/* Class = "UIButton"; normalTitle = "トップに戻る"; ObjectID = "fPa-gc-VPt"; */
+"fPa-gc-VPt.normalTitle" = "トップに戻る";
+
+/* Class = "UIButton"; normalTitle = "問題選択に戻る"; ObjectID = "lhs-Hv-a7T"; */
+"lhs-Hv-a7T.normalTitle" = "問題選択に戻る";
+
+/* Class = "UILabel"; text = "問題を選択してください"; ObjectID = "nxf-vj-l16"; */
+"nxf-vj-l16.text" = "問題を選択してください";
+
+/* Class = "UIButton"; normalTitle = "お問い合わせ"; ObjectID = "oMB-51-sJs"; */
+"oMB-51-sJs.normalTitle" = "お問い合わせ";
+
+/* Class = "UIButton"; normalTitle = "パート5"; ObjectID = "pJP-7u-o3y"; */
+"pJP-7u-o3y.normalTitle" = "パート5";
+
+/* Class = "UIButton"; normalTitle = "正"; ObjectID = "qbc-p9-vg6"; */
+"qbc-p9-vg6.normalTitle" = "正";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "z1U-lR-K7x"; */
+"z1U-lR-K7x.text" = "Label";
