@@ -24,20 +24,19 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var scoreQuizImageArray3:[UIImage] = []
     var scoreQuizImageArray4:[UIImage] = []
     var scoreQuizImageArray5:[UIImage] = []
-
     var scoreCorrectArray: [UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         tableView.register(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
         scoreQuizNumber = scoreCSVArray.count
         scoreLabel.text = "\(correct)問正解"
-
+        
         toTopButton.layer.cornerRadius = 20.0
         toSelectLevelButton.layer.cornerRadius = 20.0
         
-//        print(scoreCorrectArray)
+        //        print(scoreCorrectArray)
         // Do any additional setup after loading the view.
     }
     

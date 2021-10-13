@@ -14,7 +14,6 @@ class MainTableViewCell: UITableViewCell {
     @IBOutlet weak var scoreAnswerLabel: UILabel!
     @IBOutlet weak var explanation: UITextView!
     @IBOutlet weak var scoreQuizNunberLabel: UILabel!
-    
     @IBOutlet weak var scoreCorrectImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()

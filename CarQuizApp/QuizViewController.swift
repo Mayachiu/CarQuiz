@@ -53,7 +53,7 @@ class QuizViewController: UIViewController {
         //今後のためにボタンの名前は配列から取る
         answerButton1.setTitle(quizArray[2], for: .normal)
         answerButton2.setTitle(quizArray[3], for: .normal)
-
+        
         answerButton1.layer.cornerRadius = 30
         answerButton2.layer.cornerRadius = 30
         
@@ -72,7 +72,6 @@ class QuizViewController: UIViewController {
         scoreVC.scoreQuizImageArray3 = quizImageArray3
         scoreVC.scoreQuizImageArray4 = quizImageArray4
         scoreVC.scoreQuizImageArray5 = quizImageArray5
-        
         scoreVC.scoreCorrectArray = correctArray
     }
     
@@ -81,15 +80,11 @@ class QuizViewController: UIViewController {
             //正解
             correctCount += 1
             judgeImageView.image = UIImage(named: "correct")
-            
             correctArray.append(UIImage(named: "correct")!)
-            print(correctArray)
         } else {
             //不正解
             judgeImageView.image = UIImage(named: "incorrect")
-
             correctArray.append(UIImage(named: "incorrect")!)
-            print(correctArray)
         }
         
         judgeImageView.isHidden = false
@@ -122,7 +117,7 @@ class QuizViewController: UIViewController {
     
     func nextQuiz() {
         quizCount += 1
-  
+        
         if quizCount < csvArray.count {
             quizArray = csvArray[quizCount].components(separatedBy: ",")
             
