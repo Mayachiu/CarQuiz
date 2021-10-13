@@ -89,17 +89,25 @@
 				1AF059D32702337B0071F830 /* ScoreViewController.swift */,
 				1A60F7182704C01900D4DBC7 /* MainTableViewCell.xib */,
 				1A60F7172704C01900D4DBC7 /* MainTableViewCell.swift */,
-				1AF059D527028B0C0071F830 /* quiz1.csv */,
-				1AF059DE2702C20F0071F830 /* quiz2.csv */,
-				1AE3C7702704D98700378DD7 /* quiz3.csv */,
-				1AE3C7722704D9BD00378DD7 /* quiz4.csv */,
-				1AE3C7742704D9D000378DD7 /* quiz5.csv */,
+				1A8CCE2E27168FEE003F9505 /* csv */,
 				1A1603552701E5EC00C9F81E /* Assets.xcassets */,
 				1A1603572701E5EC00C9F81E /* LaunchScreen.storyboard */,
 				1A16035A2701E5EC00C9F81E /* Info.plist */,
 				1AF059D72702952E0071F830 /* image */,
 			);
 			path = CarQuizApp;
+			sourceTree = "<group>";
+		};
+		1A8CCE2E27168FEE003F9505 /* csv */ = {
+			isa = PBXGroup;
+			children = (
+				1AF059D527028B0C0071F830 /* quiz1.csv */,
+				1AF059DE2702C20F0071F830 /* quiz2.csv */,
+				1AE3C7702704D98700378DD7 /* quiz3.csv */,
+				1AE3C7722704D9BD00378DD7 /* quiz4.csv */,
+				1AE3C7742704D9D000378DD7 /* quiz5.csv */,
+			);
+			path = csv;
 			sourceTree = "<group>";
 		};
 		1AF059D72702952E0071F830 /* image */ = {
