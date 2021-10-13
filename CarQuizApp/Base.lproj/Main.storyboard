@@ -93,7 +93,7 @@
                                             <constraint firstAttribute="height" constant="60" id="hcN-be-tkw"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <state key="normal" title="レベル1">
+                                        <state key="normal" title="パート1">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
@@ -107,7 +107,7 @@
                                             <constraint firstAttribute="height" constant="60" id="mjk-hB-f1c"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <state key="normal" title="レベル2">
+                                        <state key="normal" title="パート2">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
@@ -121,7 +121,7 @@
                                             <constraint firstAttribute="height" constant="60" id="UDX-zp-T8J"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <state key="normal" title="レベル3">
+                                        <state key="normal" title="パート3">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
@@ -135,7 +135,7 @@
                                             <constraint firstAttribute="height" constant="60" id="Sb7-ao-lex"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <state key="normal" title="レベル4">
+                                        <state key="normal" title="パート4">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
@@ -149,7 +149,7 @@
                                             <constraint firstAttribute="height" constant="60" id="1TN-M3-CUl"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <state key="normal" title="レベル5">
+                                        <state key="normal" title="パート5">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
